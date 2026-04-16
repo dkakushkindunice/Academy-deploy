@@ -1,0 +1,12 @@
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\bin\Debug\net8.0\Kakushkin_NewsFeed.Domain.deps.json
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\bin\Debug\net8.0\Kakushkin_NewsFeed.Domain.dll
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\bin\Debug\net8.0\Kakushkin_NewsFeed.Domain.pdb
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.AssemblyInfoInputs.cache
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.AssemblyInfo.cs
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.sourcelink.json
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.dll
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\refint\Kakushkin_NewsFeed.Domain.dll
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\Kakushkin_NewsFeed.Domain.pdb
+D:\Projects\Academy\src\Kakushkin_NewsFeed.Domain\obj\Debug\net8.0\ref\Kakushkin_NewsFeed.Domain.dll

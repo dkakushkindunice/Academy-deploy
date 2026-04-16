@@ -1,0 +1,1 @@
+import{B as t}from"./index-DSyRifM4.js";const o={async upload(e){const a=new FormData;return a.append("file",e),(await t.post("/v1/file/uploadFile",a,{headers:{"Content-Type":"multipart/form-data"}})).data},getFileUrl(e){return`undefined/v1/file/${e}`}};export{o as f};
