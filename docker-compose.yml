@@ -56,20 +56,32 @@ services:
     depends_on:
       - frontend
 
-  certbot:
+certbot-initial:
     image: certbot/certbot
-    container_name: certbot
+    container_name: certbot-initial
     volumes:
       - certbot_etc:/etc/letsencrypt
       - certbot_www:/var/www/certbot
     command: >
-      sh -c "
-        trap exit TERM;
-        while :; do
-          certbot renew --webroot -w /var/www/certbot;
-          sleep 12h;
-        done
-      "
+      certonly --webroot -w /var/www/certbot \
+        -d kakushkin-dima.ru \
+        -d www.kakushkin-dima.ru \
+        --non-interactive \
+        --agree-tos \
+        --email your-email@kakushkin-dima.ru \
+        --force-renewal
+    depends_on:
+      - nginx
+
+    certbot-renew:
+      image: certbot/certbot
+      container_name: certbot-renew
+      volumes:
+        - certbot_etc:/etc/letsencrypt
+        - certbot_www:/var/www/certbot
+      entrypoint: sh -c "trap exit TERM; while :; do certbot renew --webroot -w /var/www/certbot; sleep 12h; done"
+      depends_on:
+        - certbot-initial
 
 volumes:
   db_data:
