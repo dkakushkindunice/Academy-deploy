@@ -62,14 +62,7 @@ services:
     volumes:
       - certbot_etc:/etc/letsencrypt
       - certbot_www:/var/www/certbot
-    command: >
-      certonly --webroot -w /var/www/certbot \
-        -d kakushkin-dima.ru \
-        -d www.kakushkin-dima.ru \
-        --non-interactive \
-        --agree-tos \
-        --email your-email@kakushkin-dima.ru \
-        --force-renewal
+    command: certonly --webroot -w /var/www/certbot -d kakushkin-dima.ru -d www.kakushkin-dima.ru --non-interactive --agree-tos --email kakushkin-dima@email.com
     depends_on:
       - nginx
 
