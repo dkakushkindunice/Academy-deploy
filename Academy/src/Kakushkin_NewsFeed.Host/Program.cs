@@ -7,9 +7,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy
-            .WithOrigins("http://localhost", "http://localhost:5173")
-            .AllowAnyHeader()
+        policy.WithOrigins(
+                "https://kakushkin-dima.ru",
+                "https://www.kakushkin-dima.ru"
+            ).AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials(); // если используешь cookies / auth
     });
