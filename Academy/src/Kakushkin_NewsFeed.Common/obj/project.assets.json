@@ -623,11 +623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
+      "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
       "projectName": "Kakushkin_NewsFeed.Common",
-      "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
+      "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
       "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\obj\\",
+      "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

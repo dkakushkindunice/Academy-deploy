@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "toGkwmLkYNM=",
+  "dgSpecHash": "sGOQ8HRA9YM=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Academy\\tests\\Kakushkin_NewsFeed.Application.Tests\\Kakushkin_NewsFeed.Application.Tests.csproj",
+  "projectFilePath": "D:\\Projects\\Academy-deploy\\Academy\\tests\\Kakushkin_NewsFeed.Application.Tests\\Kakushkin_NewsFeed.Application.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dkaku\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\dkaku\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

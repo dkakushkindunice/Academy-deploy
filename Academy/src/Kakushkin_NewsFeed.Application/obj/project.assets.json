@@ -2582,11 +2582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+      "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
       "projectName": "Kakushkin_NewsFeed.Application",
-      "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+      "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
       "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\obj\\",
+      "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2607,17 +2607,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
-              "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
+            "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
+              "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
             },
-            "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
-              "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
+            "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
+              "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
             },
-            "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
-              "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
+            "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
+              "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
             },
-            "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
-              "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj"
+            "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
+              "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj"
             }
           }
         }
@@ -2678,5 +2678,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

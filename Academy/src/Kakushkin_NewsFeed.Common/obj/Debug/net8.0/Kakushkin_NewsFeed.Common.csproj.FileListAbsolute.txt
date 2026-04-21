@@ -11,3 +11,16 @@ D:\Projects\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_New
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\refint\Kakushkin_NewsFeed.Common.dll
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.pdb
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\ref\Kakushkin_NewsFeed.Common.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\bin\Debug\net8.0\Kakushkin_NewsFeed.Common.deps.json
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\bin\Debug\net8.0\Kakushkin_NewsFeed.Common.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\bin\Debug\net8.0\Kakushkin_NewsFeed.Common.pdb
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.csproj.AssemblyReference.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.AssemblyInfoInputs.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.AssemblyInfo.cs
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.csproj.CoreCompileInputs.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.sourcelink.json
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\refint\Kakushkin_NewsFeed.Common.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\Kakushkin_NewsFeed.Common.pdb
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Common\obj\Debug\net8.0\ref\Kakushkin_NewsFeed.Common.dll

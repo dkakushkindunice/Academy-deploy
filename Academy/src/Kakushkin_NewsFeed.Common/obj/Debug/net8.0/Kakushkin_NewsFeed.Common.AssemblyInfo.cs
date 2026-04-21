@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kakushkin_NewsFeed.Common")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f90abbf1127e56eac9ffcb94f9fe2ac2a20459b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a78e2d1416c86633bca5fe44f070a072f57ba3ad")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kakushkin_NewsFeed.Common")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kakushkin_NewsFeed.Common")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

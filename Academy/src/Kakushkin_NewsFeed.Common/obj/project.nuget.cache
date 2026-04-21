@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "S0kP2w23Qzw=",
+  "dgSpecHash": "3QBCp1bxxhw=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
+  "projectFilePath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dkaku\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\dkaku\\.nuget\\packages\\mediatr\\13.0.0\\mediatr.13.0.0.nupkg.sha512",

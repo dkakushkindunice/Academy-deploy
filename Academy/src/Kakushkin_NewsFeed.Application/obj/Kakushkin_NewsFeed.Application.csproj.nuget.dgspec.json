@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj": {}
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj",
+        "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj",
         "projectName": "Kakushkin_NewsFeed.Abstractions",
-        "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj",
+        "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj",
         "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\obj\\",
+        "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj": {
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+        "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
         "projectName": "Kakushkin_NewsFeed.Application",
-        "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+        "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
         "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\obj\\",
+        "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,17 +97,17 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
               },
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
               },
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
               },
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj"
               }
             }
           }
@@ -169,14 +169,14 @@
         }
       }
     },
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
+        "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
         "projectName": "Kakushkin_NewsFeed.Common",
-        "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
+        "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj",
         "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\obj\\",
+        "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -244,14 +244,14 @@
         }
       }
     },
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj",
+        "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj",
         "projectName": "Kakushkin_NewsFeed.Domain",
-        "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj",
+        "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj",
         "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\obj\\",
+        "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -309,14 +309,14 @@
         }
       }
     },
-    "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
+    "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj",
+        "projectUniqueName": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj",
         "projectName": "Kakushkin_NewsFeed.Persistence",
-        "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj",
+        "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\Kakushkin_NewsFeed.Persistence.csproj",
         "packagesPath": "C:\\Users\\dkaku\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\obj\\",
+        "outputPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -337,14 +337,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Abstractions\\Kakushkin_NewsFeed.Abstractions.csproj"
               },
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Common\\Kakushkin_NewsFeed.Common.csproj"
               },
-              "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
-                "projectPath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
+              "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj": {
+                "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Domain\\Kakushkin_NewsFeed.Domain.csproj"
               }
             }
           }

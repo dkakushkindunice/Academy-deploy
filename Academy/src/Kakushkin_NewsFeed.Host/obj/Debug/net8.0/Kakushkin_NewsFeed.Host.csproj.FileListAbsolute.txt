@@ -143,3 +143,15 @@ D:\Projects\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\rjsmrazor.dswa.
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\Projects\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.csproj.AssemblyReference.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.AssemblyInfoInputs.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.AssemblyInfo.cs
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.csproj.CoreCompileInputs.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.sourcelink.json
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\refint\Kakushkin_NewsFeed.Host.dll
+D:\Projects\Academy-deploy\Academy\src\Kakushkin_NewsFeed.Host\obj\Debug\net8.0\Kakushkin_NewsFeed.Host.pdb

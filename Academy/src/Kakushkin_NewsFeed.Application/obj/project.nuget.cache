@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UlauMYG/+jg=",
+  "dgSpecHash": "SNhjWzvX9K8=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+  "projectFilePath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dkaku\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\dkaku\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -64,5 +64,18 @@
     "C:\\Users\\dkaku\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
     "C:\\Users\\dkaku\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'AutoMapper' 12.0.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-rvv3-g6hj-g44x",
+      "projectPath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Projects\\Academy-deploy\\Academy\\src\\Kakushkin_NewsFeed.Application\\Kakushkin_NewsFeed.Application.csproj",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
