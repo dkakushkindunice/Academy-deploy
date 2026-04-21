@@ -56,7 +56,7 @@ services:
     depends_on:
       - frontend
 
-certbot-initial:
+  certbot-initial:
     image: certbot/certbot
     container_name: certbot-initial
     volumes:
@@ -73,7 +73,7 @@ certbot-initial:
     depends_on:
       - nginx
 
-    certbot-renew:
+  certbot-renew:
       image: certbot/certbot
       container_name: certbot-renew
       volumes:
