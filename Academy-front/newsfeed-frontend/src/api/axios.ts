@@ -3,7 +3,7 @@ import { useAuthStore } from '../stores/auth.store';
 import { useToast } from '../composables/useToast';
 
 const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://localhost/api";
+  import.meta.env.VITE_API_BASE_URL || "/api";
 
 console.log("API BASE =", API_BASE_URL);
 
