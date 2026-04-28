@@ -17,7 +17,7 @@ services:
       timeout: 3s
       retries: 20
     networks:
-      - bridge
+      - app-networks
 
   backend:
     image: dkakushkin/academy:latest
@@ -32,7 +32,7 @@ services:
       - "8080"
     restart: unless-stopped
     networks:
-      - bridge
+      - app-networks
 
   frontend:
     image: dkakushkin/frontend:latest
@@ -43,7 +43,7 @@ services:
       - "80"
     restart: unless-stopped
     networks:
-      - bridge
+      - app-networks
 
   nginx:
     image: nginx:latest
@@ -57,8 +57,9 @@ services:
       - certbot_www:/var/www/certbot
     depends_on:
       - backend
+      - frontend
     networks:
-      - bridge
+      - app-networks
 
   certbot-initial:
     image: certbot/certbot
@@ -70,7 +71,7 @@ services:
     depends_on:
       - nginx
     networks:
-      - bridge
+      - app-networks
 
   certbot-renew:
       image: certbot/certbot
@@ -82,7 +83,7 @@ services:
       depends_on:
         - certbot-initial
       networks:
-        - bridge
+        - app-networks
 
 volumes:
   db_data:
