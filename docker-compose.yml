@@ -56,16 +56,13 @@ services:
       - certbot_etc:/etc/letsencrypt
       - certbot_www:/var/www/certbot
     command: >
-      /bin/sh -c "
+      sh -c "
       if [ ! -f /etc/letsencrypt/live/kakushkin-dima.ru/fullchain.pem ]; then
         echo 'Creating self-signed certificate for temporary use';
         mkdir -p /etc/letsencrypt/live/kakushkin-dima.ru;
-        openssl req -x509 -nodes -days 1 -newkey rsa:2048
-          -keyout /etc/letsencrypt/live/kakushkin-dima.ru/privkey.pem
-          -out /etc/letsencrypt/live/kakushkin-dima.ru/fullchain.pem
-          -subj '/CN=kakushkin-dima.ru';
-      fi
-      exec nginx -g 'daemon off;'
+        openssl req -x509 -nodes -days 1 -newkey rsa:2048 -keyout /etc/letsencrypt/live/kakushkin-dima.ru/privkey.pem -out /etc/letsencrypt/live/kakushkin-dima.ru/fullchain.pem -subj '/CN=kakushkin-dima.ru';
+      fi;
+      exec nginx -g 'daemon off;';
       "
     depends_on:
       - backend
