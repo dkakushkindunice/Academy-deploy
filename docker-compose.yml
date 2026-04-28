@@ -20,9 +20,7 @@ services:
       - app-networks
 
   backend:
-    build:
-      context: .
-      dockerfile: src/Kakushkin_NewsFeed.Host/Dockerfile
+    image: dkakushkin/academy:latest
     container_name: newsfeed-api
     depends_on:
       db:
@@ -37,9 +35,7 @@ services:
       - app-networks
 
   frontend:
-    build:
-      context: Academy-front/newsfeed-frontend
-      dockerfile: Dockerfile
+    image: dkakushkin/frontend:latest
     container_name: newsfeed-frontend
     depends_on:
       - backend
