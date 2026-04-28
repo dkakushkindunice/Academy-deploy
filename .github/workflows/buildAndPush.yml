@@ -26,7 +26,7 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .  
-          file: ./Academy/src/Kakushkin_NewsFeed.Host/Dockerfile
+          file: ./src/Kakushkin_NewsFeed.Host/Dockerfile
           push: true
           tags: dkakushkin/academy:latest
       - name: Degug

@@ -21,7 +21,7 @@ services:
 
   backend:
     build:
-      context: Academy
+      context: .
       dockerfile: src/Kakushkin_NewsFeed.Host/Dockerfile
     container_name: newsfeed-api
     depends_on:
