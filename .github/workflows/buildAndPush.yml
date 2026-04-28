@@ -25,7 +25,8 @@ jobs:
       - name: Build and push backend
         uses: docker/build-push-action@v7
         with:
-          context: ./Academy/src/Kakushkin_NewsFeed.Host
+          context: .  
+          file: ./Academy/src/Kakushkin_NewsFeed.Host/Dockerfile
           push: true
           tags: dkakushkin/academy:latest
       - name: Degug

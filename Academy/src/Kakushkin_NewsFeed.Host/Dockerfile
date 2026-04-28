@@ -12,7 +12,7 @@ COPY ["src/Kakushkin_NewsFeed.Abstractions/Kakushkin_NewsFeed.Abstractions.cspro
 COPY ["src/Kakushkin_NewsFeed.Application/Kakushkin_NewsFeed.Application.csproj", "src/Kakushkin_NewsFeed.Application/"]
 COPY ["src/Kakushkin_NewsFeed.Common/Kakushkin_NewsFeed.Common.csproj", "src/Kakushkin_NewsFeed.Common/"]
 COPY ["src/Kakushkin_NewsFeed.Domain/Kakushkin_NewsFeed.Domain.csproj", "src/Kakushkin_NewsFeed.Domain/"]
-COPY ["src//Kakushkin_NewsFeed.Persistence/Kakushkin_NewsFeed.Persistence.csproj", "src/Kakushkin_NewsFeed.Persistence/"]
+COPY ["src/Kakushkin_NewsFeed.Persistence/Kakushkin_NewsFeed.Persistence.csproj", "src/Kakushkin_NewsFeed.Persistence/"]
 RUN dotnet restore "src/Kakushkin_NewsFeed.Host/Kakushkin_NewsFeed.Host.csproj"
 #RUN dotnet restore ./Kakushkin_NewsFeed.sln   #<ВАЖНО
 COPY . .
