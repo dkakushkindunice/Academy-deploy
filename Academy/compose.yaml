@@ -21,7 +21,7 @@
     image: kakushkin_newsfeed.host
     build:
       context: .
-      dockerfile: src/Kakushkin_NewsFeed.Host/Dockerfile
+      dockerfile: Dockerfile
     container_name: newsfeed-api
     depends_on:
       db:
