@@ -16,5 +16,9 @@ http {
             proxy_set_header Host $host;
             proxy_set_header X-Real-IP $remote_addr;
         }
+
+        location ~ ^/(swagger|v1)/ {
+            rewrite ^/(.*)$ /api/$1 last;
+        }
     }
 }
