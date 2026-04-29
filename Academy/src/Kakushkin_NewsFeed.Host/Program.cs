@@ -27,4 +27,5 @@ using (var scope = app.Services.CreateScope())
 }
 startup.ConfigureMiddleware(app, app.Environment);
 app.MapGet("/", () => "Hello World!");
+app.UseHttpsRedirection();
 app.Run();

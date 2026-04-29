@@ -46,16 +46,24 @@ services:
       - app-networks
 
   nginx:
-    image: nginx:latest
+    image: nginx:alpine
     container_name: nginx
     restart: always
+    env_file:
+      - ".env"
     ports:
       - "80:80"
       - "443:443"
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/nginx.conf.template.${ENVIRONMENT}:/tmp/nginx.conf.template:ro
       - certbot_etc:/etc/letsencrypt
       - certbot_www:/var/www/certbot
+    command: >
+      sh -c "
+        rm -f /etc/nginx/nginx.conf &&
+        envsubst '\$${DOMAIN}' < /tmp/nginx.conf.template > /etc/nginx/nginx.conf &&
+        nginx -g 'daemon off;'
+      "
     depends_on:
       - backend
       - frontend
@@ -65,10 +73,12 @@ services:
   certbot-initial:
     image: certbot/certbot
     container_name: certbot-initial
+    profiles:
+      - production
     volumes:
       - certbot_etc:/etc/letsencrypt
       - certbot_www:/var/www/certbot
-    command: certonly --webroot -w /var/www/certbot -d kakushkin-dima.ru -d www.kakushkin-dima.ru --non-interactive --agree-tos --email kakushkin-dima@email.com
+    command: certonly --webroot -w /var/www/certbot -d ${DOMAIN} -d www.${DOMAIN} --non-interactive --agree-tos --email kakushkin-dima@email.com
     depends_on:
       - nginx
     networks:
@@ -77,6 +87,8 @@ services:
   certbot-renew:
       image: certbot/certbot
       container_name: certbot-renew
+      profiles:
+      - production
       volumes:
         - certbot_etc:/etc/letsencrypt
         - certbot_www:/var/www/certbot
