@@ -44,15 +44,14 @@ public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, R
                 name: request.Name,
                 avatar: request.Avatar
             );
-            var token = _jwtTokenGenerator.GenerateToken(user.Id);
 
             user.SetPassword(_passwordHasher.HashPassword(user, request.Password));
             
-            await _dbContext.Users.AddAsync(user, cancellationToken);
+            var createdUser = await _dbContext.Users.AddAsync(user, cancellationToken);
             await _dbContext.SaveChangesAsync(cancellationToken);
-            
             _logger.LogInformation($"Register success: user with email {request.Email} and name {request.Name}");
             
+            var token = _jwtTokenGenerator.GenerateToken(createdUser.Entity.Id);
             return Result<UserResponse>.Ok(new UserResponse(user,token));
     }
 }

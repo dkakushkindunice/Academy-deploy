@@ -1,7 +1,7 @@
 ﻿services:
   db:
     image: postgres:16
-    container_name: newsfeed-postgres
+    container_name: newsfeed-postgres-local
     restart: unless-stopped
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-app}
@@ -15,14 +15,14 @@
       timeout: 3s
       retries: 20
     ports:
-      - 5432:5432
+      - 5433:5432
       
   kakushkin_newsfeed.host:
     image: kakushkin_newsfeed.host
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: newsfeed-api
+    container_name: newsfeed-api-local
     depends_on:
       db:
         condition: service_healthy
