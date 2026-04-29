@@ -15,11 +15,11 @@ export const useNewsStore = defineStore('news', () => {
   async function fetchNews(limit = 10, offset = 0) {
     try {
       loading.value = true;
-      const response = await newsApi.getAll({ limit, offset });
-
-      if (response.data) {
-        newsList.value = response.data.newsOutDtos;
-        totalNews.value = response.data.numberOfElements;
+      const data = await newsApi.getAll({ limit, offset });
+console.log('news.store.fetchNews',data);
+      if (data) {
+        newsList.value = data.newsOutDtos;
+        totalNews.value = data.numberOfElements;
       }
     } catch (error) {
       console.error('Error fetching news:', error);

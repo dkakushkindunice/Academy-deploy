@@ -8,14 +8,18 @@ import type {
   PaginatedNewsDto,
 } from '../types/news.types';
 
-export const newsApi = {
-  async getAll(params: PaginationParams): Promise<ApiResponse<PaginatedNewsDto>> {
-    const response = await apiClient.get<ApiResponse<PaginatedNewsDto>>(
-      '/v1/news',
-      { params }
-    );
-    return response.data;
-  },
+console.log('BASE URL:', import.meta.env.VITE_API_BASE_URL);
+
+  export const newsApi = {
+    async getAll(params: PaginationParams): Promise<PaginatedNewsDto> {
+      const { data } = await apiClient.get<PaginatedNewsDto>(
+        '/v1/news',
+        { params }
+      );
+
+      return data;
+    },
+
 
   async create(data: CreateNewsCommand): Promise<ApiResponse<NewsOutDto>> {
     const response = await apiClient.post<ApiResponse<NewsOutDto>>(

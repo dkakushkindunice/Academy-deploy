@@ -11,8 +11,8 @@ export const authApi = {
     return response.data;
   },
 
-  async login(data: LoginRequest): Promise<ApiResponse<UserResponse>> {
-    const response = await apiClient.post<ApiResponse<UserResponse>>(
+  async login(data: LoginRequest): Promise<UserResponse> {
+    const response = await apiClient.post<UserResponse>(
       '/v1/Auth/signIn',
       data
     );

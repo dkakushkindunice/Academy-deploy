@@ -89,7 +89,7 @@ const currentPage = ref(1);
 const limit = 9;
 
 const totalPages = computed(() => Math.ceil(newsStore.totalNews / limit));
-
+console.log('AUTH:', authStore.isAuthenticated);
 const loadNews = async () => {
   const offset = (currentPage.value - 1) * limit;
   await newsStore.fetchNews(limit, offset);
@@ -108,6 +108,7 @@ const handleDelete = async (id: number) => {
 };
 
 onMounted(() => {
+  authStore.checkAuth();
   loadNews();
 });
 </script>

@@ -16,9 +16,11 @@ export const useAuthStore = defineStore('auth', () => {
     JSON.parse(localStorage.getItem(USER_KEY) || 'null')
   );
   const loading = ref(false);
+  const isAuthenticated = ref(false)
 
-  const isAuthenticated = computed(() => !!token.value);
-
+  const checkAuth = () => {
+    isAuthenticated.value = document.cookie.includes('accessToken')
+  }
   async function register(data: RegisterRequest) {
     try {
       loading.value = true;
@@ -41,16 +43,13 @@ export const useAuthStore = defineStore('auth', () => {
     try {
       loading.value = true;
       const response = await authApi.login(data);
-
-      if (response.data) {
-          console.log("INSIDE SUCCESS BLOCK");
-        setAuth(response.data);
-  alert("INSIDE SUCCESS");
-
-        alert('Login successful!');
+      console.log('auth ',response);
+  
+      if (response) {
+        setAuth(response);
         toast.success('Login successful!');
         router.push('/');
-      }
+      } 
     } catch (error) {
       console.error('Login error:', error);
       throw error;
@@ -80,6 +79,7 @@ export const useAuthStore = defineStore('auth', () => {
     user,
     loading,
     isAuthenticated,
+    checkAuth,
     register,
     login,
     logout,
