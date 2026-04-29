@@ -6,7 +6,8 @@ namespace Kakushkin_NewsFeed.Host.Extensions;
 
 public static class AuthenticationServiceExtensions
 {
-    public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddJwtAuthentication(this IServiceCollection services,
+        IConfiguration configuration)
     {
         services.AddAuthentication(options =>
             {
@@ -25,6 +26,18 @@ public static class AuthenticationServiceExtensions
                     ValidAudience = configuration["Jwt:Audience"],
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(configuration["Jwt:Secret"]))
+                };
+
+                options.Events = new JwtBearerEvents
+                {
+                    OnMessageReceived = ctx =>
+                    {
+                        ctx.Request.Cookies.TryGetValue("accessToken", out var accessToken);
+                        if (!string.IsNullOrEmpty(accessToken))
+                            ctx.Token = accessToken;
+
+                        return Task.CompletedTask;
+                    }
                 };
             });
 

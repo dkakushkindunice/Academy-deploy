@@ -45,7 +45,7 @@ public class LoginUserCommandHandler : IRequestHandler<LoginUserCommand, Result<
 
         var token = _jwtTokenGenerator.GenerateToken(existingUser.Id);
         _logger.LogInformation($"Login succeeded: user with email {request.Email} created token {token}");
-        var response = new UserResponse(existingUser, token);
+        var response = new UserResponse(existingUser);
 
         return Result<UserResponse>.Ok(response);
     }

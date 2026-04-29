@@ -21,6 +21,7 @@ public static class ApplicationServiceExtensions
         services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
         services.AddScoped<ITagService, TagService>();
         services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
+        services.AddHttpContextAccessor();
 
         return services;
     }

@@ -52,7 +52,7 @@ public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, R
             _logger.LogInformation($"Register success: user with email {request.Email} and name {request.Name}");
             
             var token = _jwtTokenGenerator.GenerateToken(createdUser.Entity.Id);
-            return Result<UserResponse>.Ok(new UserResponse(user,token));
+            return Result<UserResponse>.Ok(new UserResponse(user));
     }
 }
 
