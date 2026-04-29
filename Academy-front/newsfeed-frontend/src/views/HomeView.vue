@@ -4,7 +4,7 @@
     <section class="container-custom py-20">
       <div class="text-center">
         <h1 class="text-5xl font-bold text-gray-900 mb-6">
-          Welcome to <span class="text-primary-600">NewsFeed</span>
+          Welcome to the <span class="text-primary-600">NewsFeed</span>
         </h1>
         <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
           Discover, share, and stay updated with the latest news from around the world.
