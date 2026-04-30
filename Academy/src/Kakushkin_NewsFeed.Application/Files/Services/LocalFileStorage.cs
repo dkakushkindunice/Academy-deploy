@@ -47,7 +47,7 @@ public class LocalFileStorage : IFileStorage
             useAsync: true);
         await file.CopyToAsync(fs, ct);
 
-        return path;
+        return safeName;
     }
 
     public async Task<(Stream stream, string ContentType)?> GetAsync(string fileName, CancellationToken ct)

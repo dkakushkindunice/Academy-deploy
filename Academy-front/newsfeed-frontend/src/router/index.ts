@@ -59,18 +59,15 @@ const router = createRouter({
 });
 
 // Navigation Guard
-router.beforeEach((to, from, next) => {
-  const token = localStorage.getItem('token');
+router.beforeEach(async (to, from, next) => {
+  const authStore = useAuthStore();
+  
+if (!authStore.authChecked) {
+    await authStore.checkAuth();
+  }
 
-  const requiresAuth = to.matched.some(r => r.meta.requiresAuth);
-  const guestOnly = to.matched.some(r => r.meta.guestOnly);
-
-  const isAuth = !!token;
-
-  if (requiresAuth && !isAuth) {
+if (to.meta.requiresAuth && !authStore.isAuthenticated) {
     next('/login');
-  } else if (guestOnly && isAuth) {
-    next('/');
   } else {
     next();
   }

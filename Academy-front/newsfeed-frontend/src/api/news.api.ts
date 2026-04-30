@@ -22,6 +22,7 @@ console.log('BASE URL:', import.meta.env.VITE_API_BASE_URL);
 
 
   async create(data: CreateNewsCommand): Promise<ApiResponse<NewsOutDto>> {
+    console.log('put create news')
     const response = await apiClient.post<ApiResponse<NewsOutDto>>(
       '/v1/news',
       data

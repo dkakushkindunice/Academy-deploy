@@ -16,7 +16,7 @@ export const useNewsStore = defineStore('news', () => {
     try {
       loading.value = true;
       const data = await newsApi.getAll({ limit, offset });
-console.log('news.store.fetchNews',data);
+      console.log('news.store.fetchNews',data);
       if (data) {
         newsList.value = data.newsOutDtos;
         totalNews.value = data.numberOfElements;

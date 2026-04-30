@@ -5,28 +5,35 @@ import type { RegisterRequest, LoginRequest, UserResponse } from '../types/auth.
 import { useToast } from '../composables/useToast';
 import router from '../router';
 
-const TOKEN_KEY = 'auth_token';
-const USER_KEY = 'auth_user';
-
 export const useAuthStore = defineStore('auth', () => {
   const toast = useToast();
-  
-  const token = ref<string | null>(localStorage.getItem(TOKEN_KEY));
-  const user = ref<UserResponse | null>(
-    JSON.parse(localStorage.getItem(USER_KEY) || 'null')
-  );
+const user = ref<UserResponse | null>(null);
   const loading = ref(false);
   const isAuthenticated = ref(false)
+ const authChecked = ref(false);
 
-  const checkAuth = () => {
-    isAuthenticated.value = document.cookie.includes('accessToken')
+async function checkAuth() {
+if (authChecked.value) return;
+
+    try {
+      const me = await authApi.getCurrentUser();
+      user.value = me;
+      isAuthenticated.value = true;
+    } catch {
+      user.value = null;
+      isAuthenticated.value = false;
+    }
+    finally {
+    authChecked.value = true;
   }
+  }
+
   async function register(data: RegisterRequest) {
     try {
       loading.value = true;
       const response = await authApi.register(data);
       if (response) {
-        //setAuth(response.data?);
+          await checkAuth();
 
           toast.success('Registration successful!');
           router.push('/');
@@ -46,7 +53,8 @@ export const useAuthStore = defineStore('auth', () => {
       console.log('auth ',response);
   
       if (response) {
-        setAuth(response);
+        authChecked.value = false; 
+        await checkAuth();
         toast.success('Login successful!');
         router.push('/');
       } 
@@ -58,27 +66,18 @@ export const useAuthStore = defineStore('auth', () => {
     }
   }
 
-  function setAuth(userData: UserResponse) {
-    token.value = userData.token;
-    user.value = userData;
-    localStorage.setItem(TOKEN_KEY, userData.token);
-    localStorage.setItem(USER_KEY, JSON.stringify(userData));
-  }
-
   function logout() {
-    token.value = null;
     user.value = null;
-    localStorage.removeItem(TOKEN_KEY);
-    localStorage.removeItem(USER_KEY);
+    isAuthenticated.value = false;
     router.push('/login');
     toast.info('Logged out successfully');
   }
 
   return {
-    token,
     user,
     loading,
     isAuthenticated,
+    authChecked,
     checkAuth,
     register,
     login,

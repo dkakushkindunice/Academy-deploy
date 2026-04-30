@@ -18,6 +18,13 @@ export const authApi = {
     );
     return response.data;
   },
+
+  async getCurrentUser(): Promise<UserResponse>{
+    const response = await apiClient.get<UserResponse>(
+      '/v1/Auth/getCurrentUser'
+    );
+    return response.data;
+  }
 };
 
 apiClient.defaults.headers.common['Authorization'] = 'Bearer' + localStorage.getItem('token');

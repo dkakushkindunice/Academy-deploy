@@ -108,7 +108,6 @@ const handleDelete = async (id: number) => {
 };
 
 onMounted(() => {
-  authStore.checkAuth();
   loadNews();
 });
 </script>
